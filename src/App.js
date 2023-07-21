@@ -18,8 +18,12 @@ function App() {
       headers: {
         'Content-Type': "application/json", 
       },
-      body: JSON.stringify(newTrans),
+      body: JSON.stringify(newTrans)
   })
+  .then(response => response.json())
+  .then(data => setTransactions(()=>[...transactions, {...newTrans, id:data.id}])
+  )
+  .then(error => console.error("Failed"+ error))
   }
 
  

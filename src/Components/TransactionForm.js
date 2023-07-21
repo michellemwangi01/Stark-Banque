@@ -34,11 +34,13 @@ const TransactionForm = ({onSubmitTransaction}) => {
         <div class="transactionDetailInputDiv">
             <label class="clientdeets" for="selectOption">Category</label>
             <select 
-            required
+            
             onChange={inputHandler}
             value={newTransactionItem.category}
-            name="category"  id="companySelect" class="myformControl newCollectionDetails">
+            name="category"  id="companySelect" class="myformControl newCollectionDetails"
+            required>
              {/* {inputCategories} */}
+             <option>Please Select</option>
              <option>Food</option>
              <option>Clothing</option>
              <option>Transportation</option>
@@ -50,10 +52,9 @@ const TransactionForm = ({onSubmitTransaction}) => {
         <div class="transactionDetailInputDiv">
             <span class="clientdeets" id="">Description</span>
             <input 
-            required
             onChange={inputHandler}
             value={newTransactionItem.description}
-            id="Mobile" type="memo" name="description"class="myformControl newCollectionDetails" aria-label="Sizing example input" aria-describedby=""></input>
+            id="Mobile" type="memo" name="description"class="myformControl newCollectionDetails" aria-label="Sizing example input" aria-describedby="" required></input>
             <span><p class='errorMessages'></p></span>
         </div>
         <div class="transactionDetailInputDiv">
