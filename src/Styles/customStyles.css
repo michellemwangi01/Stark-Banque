@@ -73,10 +73,13 @@ i{
     /* visibility: hidden; */
     width: 60%;
 }
+form p{
+    background-color: transparent
+}
 fieldset{
     padding: 25px;
     border-radius: 10px;
-    background-color: black;
+    background-color: transparent;
     width: 100%;
     margin: auto;
     border: 1px solid var(--primary-color) ;
@@ -89,9 +92,10 @@ fieldset{
 }
 .transactionDetailInputDiv{
     text-align: left;
+    background-color: transparent;
 }
 .clientdeets{
-    
+    background-color: transparent;
     font-size: 20px;
     color: var(--main-color);
     font-weight: 500;

@@ -4,6 +4,7 @@ import react from 'react';
 import './Styles/customStyles.css'
 import TransactionsList from './Components/TransactionsList';
 import TransactionForm from './Components/TransactionForm';
+import Filter from "./Components/Filter";
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
   return (
     <div className="App">
     <h1>Stark-Banque of EastAfrica</h1>
+    {/* <Filter/> */}
     <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
     <button onClick={formTogglerHandler} id="formTogglerButton">{addTransactionBtnText}</button>
     {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  
