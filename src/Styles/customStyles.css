@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #6c757d;
+    --border-radius: 4px;
+  }
+  
+*{
+    background-color: rgba(0,0,0, 0.9);
+    color: whitesmoke;
+    margin: 0;
+}
+body{
+    background-color:  #9eeab0 ;
+}
+h1{
+    padding: 2rem;
+    color: var(--primary-color) ;
+}
+.componentContainer{
+    width: 80%;
+    margin: auto;
+    font-weight: 300;
+
+}
+table{
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0;
+}
+#copyrightContainer{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #copyrightText{
+    background-color: transparent;
+  }
+  thead{
+    color: var(--primary-color);
+
+  }
+i{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+  /* **********************form CSS****************** */
+#newVendorFormContainer, #addTransaction{
+    margin: auto;
+    padding: 2rem;
+    /* visibility: hidden; */
+    width: 40%;
+}
+fieldset{
+    padding: 25px;
+    border-radius: 10px;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    border: 1px solid var(--primary-color) ;
+}
+.panel h5{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.transactionDetailInputDiv{
+    text-align: left;
+}
+.clientdeets{
+    
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+#submit{
+    background-color: var(--primary-color);
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+}
+.newCollectionDetails{
+    padding-top: 15px;
+}
+.myformControl{
+    margin: 0;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    outline: none; 
+    display: block;
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #9eeab0;
+    background-color: transparent;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out;
+    padding-left: 10px;
+}
+
+.newVendorDiv{
+    margin: auto;
+    width: 65%;
+    padding: 10px;
+    background-color: var(--main-color);
+}
+
+legend{
+    padding:15px;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    
+}
+#formTitle{
+    color: var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ********************************end of form CSS************** */

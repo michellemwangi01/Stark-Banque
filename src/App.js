@@ -1,25 +1,60 @@
-import logo from './logo.svg';
+import {useState, useEffect} from "react";
 import './App.css';
+import react from 'react';
+import './Styles/customStyles.css'
+import TransactionsList from './Components/TransactionsList';
+import TransactionForm from './Components/TransactionForm';
 
 function App() {
+
+  const [transactions, setTransactions] = useState([])
+
+  function addNewTransaction(newTrans){
+    console.log(newTrans);
+    fetch('http://localhost:8001/transactions', {
+      method: "POST", 
+      headers: {
+        'Content-Type': "application/json", 
+      },
+      body: JSON.stringify(newTrans),
+  })
+  }
+ 
+  useEffect(() => {
+    fetch('http://localhost:8001/transactions')
+    .then(r => r.json())
+    .then(data => {
+      //console.log(data)
+      setTransactions(data)
+    })
+  
+    return () => {
+     
+    }
+  }, [])
+
+ 
+ 
+  
+  console.log(transactions);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>Stark-Banque of EastAfrica</h1>
+    <TransactionForm onSubmitTransaction = {addNewTransaction}  />
+    <TransactionsList transactions={transactions}/>
+    
     </div>
   );
 }
 
 export default App;
+
+ //const[categories, setTransactionCategories] = useState([])
+  // const [distinctCategories, setDistinctCategories] = useState([])
+  // let mappedcategories = transactions.map(transaction => transaction.category)
+
+  // const  distinctCategories= categories.filter((item, index, arr) => arr.indexOf(item) === index);
+  // console.log(categories);
+  //  console.log(distinctCategories); 
+  // setTransactionCategories((prev)=>[...prev, mappedcategories]);
+
