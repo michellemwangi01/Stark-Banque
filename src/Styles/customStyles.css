@@ -1,20 +1,24 @@
 :root {
     --primary-color: #28a745;
-    --secondary-color: #6c757d;
+    --secondary-color: #baf1c7;;
     --border-radius: 4px;
   }
   
 *{
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0,0,0, 0.55);
     color: whitesmoke;
     margin: 0;
 }
 body{
-    background-color:  #9eeab0 ;
+    background-color:  #b9e9c4;
 }
 h1{
+    background-color: rgba(0,0,0, 0.55);
     padding: 2rem;
     color: var(--primary-color) ;
+}
+h3{
+    color:  var(--secondary-color);
 }
 .componentContainer{
     width: 80%;
@@ -67,7 +71,7 @@ i{
     margin: auto;
     padding: 2rem;
     /* visibility: hidden; */
-    width: 40%;
+    width: 60%;
 }
 fieldset{
     padding: 25px;

@@ -9,6 +9,7 @@ function App() {
 
   const [transactions, setTransactions] = useState([])
   const [formToggler, setFormToggler] = useState(false)
+  const [addTransactionBtnText, setAddTransactionBtnText] = useState("Add a New Transaction")
 
   function addNewTransaction(newTrans){
     console.log(newTrans);
@@ -20,6 +21,8 @@ function App() {
       body: JSON.stringify(newTrans),
   })
   }
+
+ 
  
   useEffect(() => {
     fetch('http://localhost:8001/transactions')
@@ -36,10 +39,18 @@ function App() {
 
 
 
- const formTogglerHandler = () =>  {
+ 
+ 
+ 
+  const formTogglerHandler = () =>  {
   setFormToggler(!formToggler)
+  
  }
 
+ useEffect(()=>{
+   formToggler ? setAddTransactionBtnText("Close Form") : setAddTransactionBtnText("Add a New Transaction")
+
+ },[formToggler])
 
 
   
@@ -47,8 +58,8 @@ function App() {
   return (
     <div className="App">
     <h1>Stark-Banque of EastAfrica</h1>
-    <TransactionsList transactions={transactions}/>
-    <button onClick={formTogglerHandler} id="formTogglerButton">Add a New Transaction</button>
+    <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
+    <button onClick={formTogglerHandler} id="formTogglerButton">{addTransactionBtnText}</button>
     {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  
     </div>
   );

@@ -1,6 +1,12 @@
 import React from 'react'
 
-const Transaction = ({transaction}) => {
+const Transaction = ({transaction, onDeleteTransaction}) => {
+  let id = transaction.id
+  
+  const deleteTransactionHandler =()=>{
+    onDeleteTransaction(id)
+  }
+
   return (
     <tr key={transaction.id}>
       <td>{transaction.id}</td>
@@ -8,7 +14,7 @@ const Transaction = ({transaction}) => {
       <td>{transaction.category}</td>
       <td>{transaction.description}</td>
       <td>{transaction.amount}  </td>
-      <td><i class="fa fa-trash-o" ></i></td>
+      <td onClick={deleteTransactionHandler} id={transaction.id}><i class="fa fa-trash-o" ></i></td>
     </tr>
   )
 }
