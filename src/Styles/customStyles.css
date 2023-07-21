@@ -43,6 +43,25 @@ i{
     background-color: transparent;
     color: var(--primary-color);
 }
+#formTogglerButton{
+    font-weight: 300;
+    padding: 10px 15px;
+    margin: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border: 1px solid var(--primary-color);
+    width: 20rem;
+    background-color: var(--primary-color);
+    
+}
+#formTogglerButton:hover
+{
+    background-color: rgba(11, 11, 11, 0.7);
+    transform: scale(1.02);
+    font-weight: 400;
+
+}
   /* **********************form CSS****************** */
 #newVendorFormContainer, #addTransaction{
     margin: auto;

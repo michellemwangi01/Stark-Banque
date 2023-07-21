@@ -8,6 +8,7 @@ import TransactionForm from './Components/TransactionForm';
 function App() {
 
   const [transactions, setTransactions] = useState([])
+  const [formToggler, setFormToggler] = useState(false)
 
   function addNewTransaction(newTrans){
     console.log(newTrans);
@@ -33,16 +34,22 @@ function App() {
     }
   }, [])
 
- 
- 
+
+
+ const formTogglerHandler = () =>  {
+  setFormToggler(!formToggler)
+ }
+
+
+
   
-  console.log(transactions);
+  //console.log(transactions);
   return (
     <div className="App">
     <h1>Stark-Banque of EastAfrica</h1>
-    <TransactionForm onSubmitTransaction = {addNewTransaction}  />
     <TransactionsList transactions={transactions}/>
-    
+    <button onClick={formTogglerHandler} id="formTogglerButton">Add a New Transaction</button>
+    {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  
     </div>
   );
 }

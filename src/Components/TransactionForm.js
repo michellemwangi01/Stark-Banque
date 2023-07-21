@@ -29,7 +29,7 @@ const TransactionForm = ({onSubmitTransaction}) => {
   return (
     <form  id="addTransaction">
     <fieldset id="IdentityKinInfo" class="row g-3 scheduler-border">
-        <legend class="scheduler-border"> New Transaction</legend>
+        {/* <legend class="scheduler-border"> New Transaction</legend> */}
     
         <div class="transactionDetailInputDiv">
             <label class="clientdeets" for="selectOption">Category</label>
