@@ -61,7 +61,7 @@ body {
 
 #searchForm:hover,
 #searchForm:valid{
-  width: 200px;
+  width: 400px;
   cursor: pointer;
 }
 

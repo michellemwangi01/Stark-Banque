@@ -2,6 +2,7 @@ import React from 'react'
 import Transaction from './Transaction'
 import { useState } from 'react'
 
+
 const TransactionsList = ({transactions, setTransactions}) => {
   const [transactionDeleteID, settransactionDeleteID] = useState(0)
   
@@ -30,8 +31,9 @@ const TransactionsList = ({transactions, setTransactions}) => {
                 <tr>
                     <td>#</td>
                     <td>Date</td>
-                    <td>Category</td>
-                    <td>Description</td>
+                    <td>Category  <i class="fas fa-sort fa-lg" 
+                      style={{color: '#28a745'}}></i></td>
+                    <td>Description <i class="fas fa-sort fa-lg" style={{color: '#28a745'}}></i></td>
                     <td>Amount</td>
                     <td><i class="fa fa-pencil" ></i></td>
 

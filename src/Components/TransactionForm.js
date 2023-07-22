@@ -6,7 +6,7 @@ const TransactionForm = ({onSubmitTransaction}) => {
         category: "",
         description: "",
         amount: "",
-        amount: ""
+        date: ""
     })
 
     const submitHandler =(e)=>{
@@ -16,7 +16,7 @@ const TransactionForm = ({onSubmitTransaction}) => {
             category: "",
             description: "",
             amount: "",
-            amount: ""
+            date: ""
         })
     }
 
@@ -77,7 +77,12 @@ const TransactionForm = ({onSubmitTransaction}) => {
         </div>
         
         <p>*Once added, the transaction details can be viewed in the transaction list.</p>
-        <button onClick={submitHandler} id="submit" type="submit">Add Transaction</button>
+        <button 
+        onClick={submitHandler} 
+        id="submit" 
+        type="submit"
+        disabled={!newTransactionItem.category || !newTransactionItem.description || !newTransactionItem.amount || !newTransactionItem.date}
+        >Add Transaction</button>
     </fieldset>
     </form> 
   )

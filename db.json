@@ -85,44 +85,11 @@
       "id": 13
     },
     {
-      "date": "2022-07-09",
-      "description": "Office lunch Wednesday",
-      "category": "Food",
-      "amount": "3000",
+      "category": "Transportation",
+      "description": "Money for Transport",
+      "amount": "8972",
+      "date": "1923-12-23",
       "id": 14
-    },
-    {
-      "category": "Food",
-      "description": "Tranport",
-      "amount": "123",
-      "id": 15
-    },
-    {
-      "category": "",
-      "description": "",
-      "amount": "",
-      "id": 16
-    },
-    {
-      "category": "",
-      "description": "",
-      "amount": "",
-      "date": "2023-12-12",
-      "id": 17
-    },
-    {
-      "category": "",
-      "description": "",
-      "amount": "",
-      "date": "",
-      "id": 18
-    },
-    {
-      "category": "Clothing",
-      "description": "Replacing  transaction I deleted",
-      "amount": "233",
-      "date": "2023-12-23",
-      "id": 19
     }
   ]
 }
