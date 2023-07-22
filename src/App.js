@@ -1,6 +1,6 @@
+import react from 'react';
 import {useState, useEffect} from "react";
 import './App.css';
-import react from 'react';
 import './Styles/customStyles.css'
 import TransactionsList from './Components/TransactionsList';
 import TransactionForm from './Components/TransactionForm';
@@ -25,9 +25,19 @@ function App() {
   .then(data => setTransactions(()=>[...transactions, {...newTrans, id:data.id}])
   )
   .then(error => console.error("Failed"+ error))
-  }
+}
 
- 
+//console.log(transactions);
+ function filterBySearch(searchInput){
+  console.log(searchInput);
+  
+  const filteredTransactions = 
+  transactions.filter(transaction => transaction.description.toLowerCase().includes(searchInput.toLowerCase()) )
+  
+  //|| transaction.category.toLowerCase().includes(searchInput.toLowerCase()))
+
+  setTransactions(filteredTransactions)
+ }
  
   useEffect(() => {
     fetch('http://localhost:8001/transactions')
@@ -43,27 +53,20 @@ function App() {
   }, [])
 
 
-
- 
- 
- 
   const formTogglerHandler = () =>  {
-  setFormToggler(!formToggler)
-  
- }
+    setFormToggler(!formToggler)
+  }
 
- useEffect(()=>{
-   formToggler ? setAddTransactionBtnText("Close Form") : setAddTransactionBtnText("Add a New Transaction")
-
- },[formToggler])
-
+  useEffect(()=>{
+    formToggler ? setAddTransactionBtnText("Close Form") : setAddTransactionBtnText("Add a New Transaction")
+  },[formToggler])
 
   
-  //console.log(transactions);
+  
   return (
     <div className="App">
     <h1>Stark-Banque of EastAfrica</h1>
-    {/* <Filter/> */}
+    <Filter onSearchFilter={filterBySearch}/>
     <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
     <button onClick={formTogglerHandler} id="formTogglerButton">{addTransactionBtnText}</button>
     {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  

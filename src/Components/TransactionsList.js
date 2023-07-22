@@ -17,7 +17,7 @@ const TransactionsList = ({transactions, setTransactions}) => {
   }
 
   
-  console.log(transactions);
+ // console.log(transactions);
   const transactionList = 
   transactions.map(transaction => <Transaction onDeleteTransaction={deleteTransaction}key={transaction.id} transaction={transaction}/>)
   

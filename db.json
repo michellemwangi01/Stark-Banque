@@ -22,13 +22,6 @@
       "amount": -10.55
     },
     {
-      "id": 4,
-      "date": "2019-12-04",
-      "description": "Sunglasses, Urban Outfitters",
-      "category": "Fashion",
-      "amount": -24.99
-    },
-    {
       "id": 5,
       "date": "2019-12-06",
       "description": "Venmo, Alice Pays you for Burrito",
@@ -97,6 +90,39 @@
       "category": "Food",
       "amount": "3000",
       "id": 14
+    },
+    {
+      "category": "Food",
+      "description": "Tranport",
+      "amount": "123",
+      "id": 15
+    },
+    {
+      "category": "",
+      "description": "",
+      "amount": "",
+      "id": 16
+    },
+    {
+      "category": "",
+      "description": "",
+      "amount": "",
+      "date": "2023-12-12",
+      "id": 17
+    },
+    {
+      "category": "",
+      "description": "",
+      "amount": "",
+      "date": "",
+      "id": 18
+    },
+    {
+      "category": "Clothing",
+      "description": "Replacing  transaction I deleted",
+      "amount": "233",
+      "date": "2023-12-23",
+      "id": 19
     }
   ]
 }
