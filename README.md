@@ -1,4 +1,6 @@
 # STARK-BANQUE 
+file:///home/michelle/Downloads/Stark-Banque.png
+
 ## Client Transaction Tracker
 
 This is a React-based project that serves as a Client Transaction Tracker application. The application allows users to track client transactions, add new transactions, delete existing ones, and search through the transaction records.
@@ -15,7 +17,7 @@ Responsive design for optimal user experience on different devices.
 
 To run this project locally on your machine, follow these steps:
 1. Clone the repository to your local machine: `git clone git@github.com:michellemwangi01/Stark-Banque.git`.
-2.Navigate to the project directory: `cd react-client-transaction-tracker`.
+2. Navigate to the project directory: `cd react-client-transaction-tracker`.
 3. Install the project dependencies: `npm install`.
 4. Start the JSON server: `json-server --watch db.json`.
 4. Start the development server: `npm start`.
@@ -44,4 +46,4 @@ Contributions to this project are welcome. If you find any bugs, issues, or impr
 
 ## Author & License
 
-This project is authored by and licensed to `&copyMichelleMwangi`.
+This project is authored by and licensed to `MichelleMwangi`.
