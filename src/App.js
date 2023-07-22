@@ -67,7 +67,11 @@ function App() {
       <div id='landingPage'>
           <div>
             <h1>Stark-Banque of EastAfrica</h1>
+            <h4>
+Your Future, Our Priority. <br/> Empowering customers to achieve their financial goals and securing their future through personalized banking solutions. Banking at the tip of your fingers</h4>
           </div>
+      <button onClick={formTogglerHandler} id="formTogglerButton">{addTransactionBtnText}</button>
+      {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  
           <div>
         </div>
       </div>
@@ -80,8 +84,6 @@ function App() {
       </div>
       
       <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
-      <button onClick={formTogglerHandler} id="formTogglerButton">{addTransactionBtnText}</button>
-      {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  
       <div id="copyrightContainer">
       <p id="copyrightText" style={{ color: 'white', textAlign: 'center' }}>
     &copy;2023 MichelleMwangi All rights reserved.

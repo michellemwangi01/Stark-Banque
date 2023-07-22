@@ -77,12 +77,12 @@ const TransactionForm = ({onSubmitTransaction}) => {
         </div>
         
         <p>*Once added, the transaction details can be viewed in the transaction list.</p>
-        <button 
+        <button  class="addTransactionBtn"
         onClick={submitHandler} 
         id="submit" 
         type="submit"
         disabled={!newTransactionItem.category || !newTransactionItem.description || !newTransactionItem.amount || !newTransactionItem.date}
-        >Add Transaction</button>
+        >Add</button>
     </fieldset>
     </form> 
   )

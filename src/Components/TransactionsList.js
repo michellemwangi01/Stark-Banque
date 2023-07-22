@@ -30,11 +30,11 @@ const TransactionsList = ({transactions, setTransactions}) => {
             <thead className='thead-dark'>
                 <tr>
                     <td>#</td>
-                    <td>Date</td>
                     <td>Category  <i class="fas fa-sort fa-lg" 
                       style={{color: '#28a745'}}></i></td>
                     <td>Description <i class="fas fa-sort fa-lg" style={{color: '#28a745'}}></i></td>
                     <td>Amount</td>
+                      <td>Date</td>
                     <td><i class="fa fa-pencil" ></i></td>
 
                 </tr>
