@@ -45,7 +45,9 @@ const TransactionForm = ({onSubmitTransaction}) => {
              <option>Clothing</option>
              <option>Transportation</option>
              <option>Entertainment</option>
-
+             <option>Gift</option>
+             <option>Income</option>
+             <option>Housing</option>
             </select>
             <span><p class='errorMessages'></p></span>
         </div> 
