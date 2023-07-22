@@ -100,17 +100,17 @@
     },
     {
       "category": "Clothing",
-      "description": "Please fill me",
-      "amount": "1234",
-      "date": "1989-12-23",
-      "id": 18
-    },
-    {
-      "category": "Clothing",
       "description": "All the Louis V available",
       "amount": "89980",
       "date": "2024-12-23",
       "id": 19
+    },
+    {
+      "category": "Transportation",
+      "description": "From Bubbly to Home",
+      "amount": "909",
+      "date": "2021-12-23",
+      "id": 20
     }
   ]
 }
