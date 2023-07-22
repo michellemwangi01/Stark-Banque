@@ -5,9 +5,11 @@ import './Styles/customStyles.css'
 import TransactionsList from './Components/TransactionsList';
 import TransactionForm from './Components/TransactionForm';
 import Filter from "./Components/Filter";
-import SortTransactions from './Components/SortTransactions';
+
 
 function App() {
+  const renderDb = 'https://db-starkbanque.onrender.com/transactions'
+  const localDb = 'http://localhost:8001/transactions'
 
   const [transactions, setTransactions] = useState([])
   const [formToggler, setFormToggler] = useState(false)
@@ -15,7 +17,7 @@ function App() {
 
   function addNewTransaction(newTrans){
     console.log(newTrans);
-    fetch('http://localhost:8001/transactions', {
+    fetch(`${renderDb}`, {
       method: "POST", 
       headers: {
         'Content-Type': "application/json", 
@@ -41,7 +43,7 @@ function App() {
  }
  
   useEffect(() => {
-    fetch('http://localhost:8001/transactions')
+    fetch(`${renderDb}`)
     .then(r => r.json())
     .then(data => {
       //console.log(data)
@@ -84,7 +86,7 @@ Client Transaction Tracker Application. <br/> Empowering customers to achieve th
 
       </div>
       
-      <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
+      <TransactionsList renderDb={renderDb} setTransactions={setTransactions} transactions={transactions}/>
       <div id="copyrightContainer">
       <p id="copyrightText" style={{ color: 'white', textAlign: 'center' }}>
         &copy;2023 MichelleMwangi All rights reserved.

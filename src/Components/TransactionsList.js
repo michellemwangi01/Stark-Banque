@@ -3,11 +3,11 @@ import Transaction from './Transaction'
 
 
 
-const TransactionsList = ({transactions, setTransactions}) => {
+const TransactionsList = ({renderDb, transactions, setTransactions}) => {
   
   
   function deleteTransaction(id){
-    fetch(`http://localhost:8001/transactions/${id}`,{
+    fetch(`${renderDb}${id}`,{
       method: "DELETE",
     })
     
