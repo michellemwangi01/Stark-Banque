@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# STARK-BANQUE - Client Transaction Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based project that serves as a Client Transaction Tracker application. The application allows users to track client transactions, add new transactions, delete existing ones, and search through the transaction records.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+View a list of client transactions with details such as category, description, amount, and date.
+Add new transactions with relevant details.
+Delete existing transactions from the list.
+Search and filter transactions based on keywords or specific criteria.
+Responsive design for optimal user experience on different devices.
 
-### `npm start`
+### Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this project locally on your machine, follow these steps:
+1. Clone the repository to your local machine: `git clone git@github.com:michellemwangi01/Stark-Banque.git`.
+2.Navigate to the project directory: `cd react-client-transaction-tracker`.
+3. Install the project dependencies: `npm install`.
+4. Start the JSON server: `json-server --watch db.json`.
+4. Start the development server: `npm start`.
+5. The application will be running on `http://localhost:3000/ by default.`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Usage
+On the home page, you will see a landing page with a call to action to create a new transaction. 
+To add a new transaction, click on the "Add Transaction" button and fill in the required details in the form. Click "Submit" to add the transaction to the list.
+To delete a transaction, find the transaction in the list and click the "Delete" button next to it.
+To search for specific transactions, use the search bar and enter keywords or criteria to filter the list.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Technologies Used
+React: A JavaScript library for building user interfaces.
+JSX: A syntax extension for JavaScript used in React components.
+CSS: Styling the application for a visually appealing user interface.
+npm: A package manager for installing and managing project dependencies.
+Create React App: A tool for creating React applications with no build configuration.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contributing
 
-### `npm run eject`
+Contributions to this project are welcome. If you find any bugs, issues, or improvements, feel free to submit a pull request or open an issue.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author & License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is authored by and licensed to `&copyMichelleMwangi`.
