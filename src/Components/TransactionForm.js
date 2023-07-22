@@ -76,7 +76,7 @@ const TransactionForm = ({onSubmitTransaction}) => {
             <span><p class='errorMessages'></p></span>
         </div>
         
-        <p>*Once added, the transaction details can be viewed in the transaction list.</p>
+        <p>*Once added, the transaction details can be viewed in the transaction list below.</p>
         <button  class="addTransactionBtn"
         onClick={submitHandler} 
         id="submit" 

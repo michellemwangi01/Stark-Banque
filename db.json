@@ -104,6 +104,13 @@
       "amount": "998",
       "date": "2023-12-23",
       "id": 17
+    },
+    {
+      "category": "Clothing",
+      "description": "Please fill me",
+      "amount": "1234",
+      "date": "1989-12-23",
+      "id": 18
     }
   ]
 }
