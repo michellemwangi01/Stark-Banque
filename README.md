@@ -46,4 +46,4 @@ Contributions to this project are welcome. If you find any bugs, issues, or impr
 
 ## Author & License
 
-This project is authored by and licensed to `MichelleMwangi`.
+This project is authored by and licensed to `&copy; 2023 MichelleMwangi All rights reserved.`.

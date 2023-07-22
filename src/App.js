@@ -5,6 +5,7 @@ import './Styles/customStyles.css'
 import TransactionsList from './Components/TransactionsList';
 import TransactionForm from './Components/TransactionForm';
 import Filter from "./Components/Filter";
+import SortTransactions from './Components/SortTransactions';
 
 function App() {
 
@@ -86,8 +87,9 @@ Client Transaction Tracker Application. <br/> Empowering customers to achieve th
       <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
       <div id="copyrightContainer">
       <p id="copyrightText" style={{ color: 'white', textAlign: 'center' }}>
-    &copy;2023 MichelleMwangi All rights reserved.
-  </p>  </div>
+        &copy;2023 MichelleMwangi All rights reserved.
+        </p>  
+      </div>
     </div>
   );
 }
