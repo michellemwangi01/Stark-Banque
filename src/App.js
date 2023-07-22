@@ -27,7 +27,7 @@ function App() {
   .then(error => console.error("Failed"+ error))
 }
 
-//console.log(transactions);
+
  function filterBySearch(searchInput){
   console.log(searchInput);
   
@@ -47,8 +47,7 @@ function App() {
       setTransactions(data)
     })
   
-    return () => {
-     
+    return () => {  
     }
   }, [])
 
@@ -65,11 +64,28 @@ function App() {
   
   return (
     <div className="App">
-    <h1>Stark-Banque of EastAfrica</h1>
-    <Filter onSearchFilter={filterBySearch}/>
-    <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
-    <button onClick={formTogglerHandler} id="formTogglerButton">{addTransactionBtnText}</button>
-    {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  
+      <div id='landingPage'>
+          <div>
+            <h1>Stark-Banque of EastAfrica</h1>
+          </div>
+          <div>
+        </div>
+      </div>
+      <div id='searchfilterContainer'>
+        <div>
+        <h3>Recent Transactions</h3>
+        </div>
+        <Filter onSearchFilter={filterBySearch}/>
+
+      </div>
+      
+      <TransactionsList setTransactions={setTransactions} transactions={transactions}/>
+      <button onClick={formTogglerHandler} id="formTogglerButton">{addTransactionBtnText}</button>
+      {formToggler ?  <TransactionForm onSubmitTransaction = {addNewTransaction}  /> : null  }  
+      <div id="copyrightContainer">
+      <p id="copyrightText" style={{ color: 'white', textAlign: 'center' }}>
+    &copy;2023 MichelleMwangi All rights reserved.
+  </p>  </div>
     </div>
   );
 }

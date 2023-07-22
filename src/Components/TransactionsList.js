@@ -25,7 +25,7 @@ const TransactionsList = ({transactions, setTransactions}) => {
   
   return (
     <div className='componentContainer'>
-      <h3>Transaction List</h3>
+     
       <table className='table table-responsive table-striped table-dark table table-hover' >
             <thead className='thead-dark'>
                 <tr>

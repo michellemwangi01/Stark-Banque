@@ -3,17 +3,13 @@
   --secondary-color: #baf1c7;;
   --border-radius: 4px;
 }
-.filterContainer{
-  padding: 2rem;
-}
-body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  background: #07051a;
-}
 
+.filterContainer{
+  margin: 2rem;
+}
+.filterContainer div{
+  background-color: transparent;
+}
 #searchForm{
   position: relative;
   top: 50%;
@@ -57,11 +53,12 @@ body {
   text-align: center;
   font-size: 1.2em;
   transition: all 1s;
+  border-radius: 25px;
 }
 
 #searchForm:hover,
 #searchForm:valid{
-  width: 400px;
+  width: 300px;
   cursor: pointer;
 }
 

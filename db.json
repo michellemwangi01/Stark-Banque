@@ -90,6 +90,20 @@
       "amount": "8972",
       "date": "1923-12-23",
       "id": 14
+    },
+    {
+      "category": "Clothing",
+      "description": "Please fill kjkj",
+      "amount": "654",
+      "date": "5654-02-24",
+      "id": 15
+    },
+    {
+      "category": "Clothing",
+      "description": "Please fill mee",
+      "amount": "7676",
+      "date": "1723-12-31",
+      "id": 16
     }
   ]
 }

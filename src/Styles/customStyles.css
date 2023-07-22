@@ -9,16 +9,23 @@
     color: whitesmoke;
     margin: 0;
 }
+
 body{
     background-color:  #b9e9c4;
+    height: auto;
+    min-height: 95vh;
 }
 h1{
-    background-color: rgba(0,0,0, 0.55);
+    font-size: 5rem;
+    background-color: transparent;
     padding: 2rem;
     color: var(--primary-color) ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h3{
     color:  var(--secondary-color);
+    margin: 1.3rem;
+    padding: 2rem;
 }
 .componentContainer{
     width: 80%;
@@ -32,12 +39,20 @@ table{
     margin: 0;
 }
 #copyrightContainer{
+
     width: 100%;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: transparent;
   }
   #copyrightText{
     background-color: transparent;
+    
+  }
+  #searchfilterContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
   }
   thead{
     color: var(--primary-color);
@@ -109,6 +124,24 @@ fieldset{
 .newCollectionDetails{
     padding-top: 15px;
 }
+
+#landingPage{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/Buildings.jpg");
+  }
+  #landingPage div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
 .myformControl{
     margin: 0;
     text-align: left;

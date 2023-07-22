@@ -28,7 +28,7 @@ const Filter = ({onSearchFilter}) => {
 
   return (
     <div className="filterContainer">
- <form onSubmit={submitHandler} id="searchForm" action="">
+      <form onSubmit={submitHandler} id="searchForm" action="">
         <input 
         value={searchInput}
         onChange={searchInputhandler} 
