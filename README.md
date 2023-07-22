@@ -1,5 +1,6 @@
 # STARK-BANQUE 
 ![Transaction Tracker](./src/Images/Stark-Banque.png)
+
 ## Client Transaction Tracker
 
 This is a React-based project that serves as a Client Transaction Tracker application. The application allows users to track client transactions, add new transactions, delete existing ones, and search through the transaction records.
@@ -45,4 +46,4 @@ Contributions to this project are welcome. If you find any bugs, issues, or impr
 
 ## Author & License
 
-This project is authored by and licensed to `&copyMichelleMwangi`.
+This project is authored by and licensed to `MichelleMwangi`.
