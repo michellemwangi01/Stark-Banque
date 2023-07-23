@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Stark-Banque/static/css/main.09b94f17.css",
+    "main.js": "/Stark-Banque/static/js/main.13ce985b.js",
+    "static/js/787.2361804c.chunk.js": "/Stark-Banque/static/js/787.2361804c.chunk.js",
+    "static/media/BankImage.jpg": "/Stark-Banque/static/media/BankImage.137728e94f4321c1dad1.jpg",
+    "index.html": "/Stark-Banque/index.html",
+    "main.09b94f17.css.map": "/Stark-Banque/static/css/main.09b94f17.css.map",
+    "main.13ce985b.js.map": "/Stark-Banque/static/js/main.13ce985b.js.map",
+    "787.2361804c.chunk.js.map": "/Stark-Banque/static/js/787.2361804c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09b94f17.css",
+    "static/js/main.13ce985b.js"
+  ]
+}
