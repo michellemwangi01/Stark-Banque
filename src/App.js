@@ -15,6 +15,30 @@ function App() {
   const [formToggler, setFormToggler] = useState(false)
   const [addTransactionBtnText, setAddTransactionBtnText] = useState("Add a New Transaction")
 
+  
+  const formTogglerHandler = () =>  {
+    setFormToggler(!formToggler)
+  }
+
+  useEffect(()=>{
+    formToggler ? setAddTransactionBtnText("Close Form") : setAddTransactionBtnText("Add a New Transaction")
+  },[formToggler])
+
+
+  //*********************************** FETCH DATA **************************************************** */
+  useEffect(() => {
+    fetch(`${renderDb}`)
+    .then(r => r.json())
+    .then(data => {
+      //console.log(data)
+      setTransactions(data)
+    })
+  
+    return () => {  
+    }
+  }, [])
+
+  //*********************************** ADD A TRANSACTION**************************************************** */
   function addNewTransaction(newTrans){
     console.log(newTrans);
     fetch(`${renderDb}`, {
@@ -30,41 +54,17 @@ function App() {
   .then(error => console.error("Failed"+ error))
 }
 
-
+  //*********************************** FILTER BY SEARCH **************************************************** */
  function filterBySearch(searchInput){
   console.log(searchInput);
-  
-  const filteredTransactions = 
-  transactions.filter(transaction => transaction.description.toLowerCase().includes(searchInput.toLowerCase()) )
+  const filteredTransactions = transactions.filter(transaction => transaction.description.toLowerCase().includes(searchInput.toLowerCase()) )
+  setTransactions(filteredTransactions)
   
   //|| transaction.category.toLowerCase().includes(searchInput.toLowerCase()))
-
-  setTransactions(filteredTransactions)
  }
- 
-  useEffect(() => {
-    fetch(`${renderDb}`)
-    .then(r => r.json())
-    .then(data => {
-      //console.log(data)
-      setTransactions(data)
-    })
-  
-    return () => {  
-    }
-  }, [])
 
 
-  const formTogglerHandler = () =>  {
-    setFormToggler(!formToggler)
-  }
 
-  useEffect(()=>{
-    formToggler ? setAddTransactionBtnText("Close Form") : setAddTransactionBtnText("Add a New Transaction")
-  },[formToggler])
-
-  
-  
   return (
     <div className="App">
       <div id='landingPage'>
@@ -98,12 +98,5 @@ Client Transaction Tracker Application. <br/> Empowering customers to achieve th
 
 export default App;
 
- //const[categories, setTransactionCategories] = useState([])
-  // const [distinctCategories, setDistinctCategories] = useState([])
-  // let mappedcategories = transactions.map(transaction => transaction.category)
 
-  // const  distinctCategories= categories.filter((item, index, arr) => arr.indexOf(item) === index);
-  // console.log(categories);
-  //  console.log(distinctCategories); 
-  // setTransactionCategories((prev)=>[...prev, mappedcategories]);
 
