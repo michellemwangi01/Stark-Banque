@@ -1,4 +1,9 @@
 # STARK-BANQUE 
+
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
 ![Transaction Tracker](./src/Images/StarkBanque.png)
 
 ## Client Transaction Tracker
@@ -7,11 +12,13 @@ This is a React-based project that serves as a Client Transaction Tracker applic
 
 ## Features
 
-View a list of client transactions with details such as category, description, amount, and date.
-Add new transactions with relevant details.
-Delete existing transactions from the list.
-Search and filter transactions based on keywords or specific criteria.
-Responsive design for optimal user experience on different devices.
+1. View a list of client transactions with details such as category, description, amount, and date.![image](https://github.com/michellemwangi01/Stark-Banque/assets/84324369/cf02e623-be0b-45d9-b0cc-2765a865d23d)
+
+2. Add new transactions with relevant details. ![image](https://github.com/michellemwangi01/Stark-Banque/assets/84324369/c34f0ec3-74b3-4a90-b171-03696d0121e5)
+
+3. Delete existing transactions from the list.
+4. Search and filter transactions based on keywords or specific criteria.
+5. Responsive design for optimal user experience on different devices.
 
 ### Getting Started
 
